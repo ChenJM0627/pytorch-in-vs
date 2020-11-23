@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1D0D4D8-B719-3F60-B611-A3CFBB0CE5E8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>modelproject</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\vscode\cmake_pytorch\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">modelproject.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">modelproject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\vscode\cmake_pytorch\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">modelproject.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">modelproject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\vscode\cmake_pytorch\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">modelproject.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">modelproject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\vscode\cmake_pytorch\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">modelproject.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">modelproject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\vscode\libtorch\lib\c10.lib;D:\vscode\libtorch\lib\torch.lib;D:\vscode\libtorch\lib\caffe2_detectron_ops.lib;D:\vscode\libtorch\lib\caffe2_module_test_dynamic.lib;D:\vscode\libtorch\lib\c10d.lib;D:\vscode\libtorch\lib\torch_cpu.lib;D:\vscode\libtorch\lib\mkldnn.lib;D:\vscode\libtorch\lib\dnnl.lib;D:\vscode\libtorch\lib\libprotoc.lib;D:\vscode\libtorch\lib\libprotobuf.lib;D:\vscode\libtorch\lib\fbgemm.lib;D:\vscode\libtorch\lib\cpuinfo.lib;D:\vscode\libtorch\lib\libprotobuf-lite.lib;D:\vscode\libtorch\lib\gloo.lib;D:\vscode\libtorch\lib\asmjit.lib;D:\vscode\libtorch\lib\clog.lib;D:\openCV\build\x64\vc15\lib\opencv_world450.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vscode/libtorch/lib;D:/vscode/libtorch/lib/$(Configuration);D:/openCV/build/x64/vc15/lib;D:/openCV/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/vscode/cmake_pytorch/build/Debug/modelproject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/vscode/cmake_pytorch/build/Debug/modelproject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\vscode\libtorch\lib\c10.lib;D:\vscode\libtorch\lib\torch.lib;D:\vscode\libtorch\lib\caffe2_detectron_ops.lib;D:\vscode\libtorch\lib\caffe2_module_test_dynamic.lib;D:\vscode\libtorch\lib\c10d.lib;D:\vscode\libtorch\lib\torch_cpu.lib;D:\vscode\libtorch\lib\mkldnn.lib;D:\vscode\libtorch\lib\dnnl.lib;D:\vscode\libtorch\lib\libprotoc.lib;D:\vscode\libtorch\lib\libprotobuf.lib;D:\vscode\libtorch\lib\fbgemm.lib;D:\vscode\libtorch\lib\cpuinfo.lib;D:\vscode\libtorch\lib\libprotobuf-lite.lib;D:\vscode\libtorch\lib\gloo.lib;D:\vscode\libtorch\lib\asmjit.lib;D:\vscode\libtorch\lib\clog.lib;D:\openCV\build\x64\vc15\lib\opencv_world450.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vscode/libtorch/lib;D:/vscode/libtorch/lib/$(Configuration);D:/openCV/build/x64/vc15/lib;D:/openCV/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/vscode/cmake_pytorch/build/Release/modelproject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/vscode/cmake_pytorch/build/Release/modelproject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\vscode\libtorch\lib\c10.lib;D:\vscode\libtorch\lib\torch.lib;D:\vscode\libtorch\lib\caffe2_detectron_ops.lib;D:\vscode\libtorch\lib\caffe2_module_test_dynamic.lib;D:\vscode\libtorch\lib\c10d.lib;D:\vscode\libtorch\lib\torch_cpu.lib;D:\vscode\libtorch\lib\mkldnn.lib;D:\vscode\libtorch\lib\dnnl.lib;D:\vscode\libtorch\lib\libprotoc.lib;D:\vscode\libtorch\lib\libprotobuf.lib;D:\vscode\libtorch\lib\fbgemm.lib;D:\vscode\libtorch\lib\cpuinfo.lib;D:\vscode\libtorch\lib\libprotobuf-lite.lib;D:\vscode\libtorch\lib\gloo.lib;D:\vscode\libtorch\lib\asmjit.lib;D:\vscode\libtorch\lib\clog.lib;D:\openCV\build\x64\vc15\lib\opencv_world450.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vscode/libtorch/lib;D:/vscode/libtorch/lib/$(Configuration);D:/openCV/build/x64/vc15/lib;D:/openCV/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/vscode/cmake_pytorch/build/MinSizeRel/modelproject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/vscode/cmake_pytorch/build/MinSizeRel/modelproject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\vscode\libtorch\include;D:\vscode\libtorch\include\torch\csrc\api\include;D:\openCV\build\include;D:\openCV\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\vscode\libtorch\lib\c10.lib;D:\vscode\libtorch\lib\torch.lib;D:\vscode\libtorch\lib\caffe2_detectron_ops.lib;D:\vscode\libtorch\lib\caffe2_module_test_dynamic.lib;D:\vscode\libtorch\lib\c10d.lib;D:\vscode\libtorch\lib\torch_cpu.lib;D:\vscode\libtorch\lib\mkldnn.lib;D:\vscode\libtorch\lib\dnnl.lib;D:\vscode\libtorch\lib\libprotoc.lib;D:\vscode\libtorch\lib\libprotobuf.lib;D:\vscode\libtorch\lib\fbgemm.lib;D:\vscode\libtorch\lib\cpuinfo.lib;D:\vscode\libtorch\lib\libprotobuf-lite.lib;D:\vscode\libtorch\lib\gloo.lib;D:\vscode\libtorch\lib\asmjit.lib;D:\vscode\libtorch\lib\clog.lib;D:\openCV\build\x64\vc15\lib\opencv_world450.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vscode/libtorch/lib;D:/vscode/libtorch/lib/$(Configuration);D:/openCV/build/x64/vc15/lib;D:/openCV/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/vscode/cmake_pytorch/build/RelWithDebInfo/modelproject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/vscode/cmake_pytorch/build/RelWithDebInfo/modelproject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\vscode\cmake_pytorch\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/vscode/cmake_pytorch/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake\bin\cmake.exe -SD:/vscode/cmake_pytorch -BD:/vscode/cmake_pytorch/build --check-stamp-file D:/vscode/cmake_pytorch/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\vscode\cmake_pytorch\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/vscode/cmake_pytorch/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake\bin\cmake.exe -SD:/vscode/cmake_pytorch -BD:/vscode/cmake_pytorch/build --check-stamp-file D:/vscode/cmake_pytorch/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\vscode\cmake_pytorch\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/vscode/cmake_pytorch/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake\bin\cmake.exe -SD:/vscode/cmake_pytorch -BD:/vscode/cmake_pytorch/build --check-stamp-file D:/vscode/cmake_pytorch/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\vscode\cmake_pytorch\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/vscode/cmake_pytorch/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake\bin\cmake.exe -SD:/vscode/cmake_pytorch -BD:/vscode/cmake_pytorch/build --check-stamp-file D:/vscode/cmake_pytorch/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;D:\vscode\cmake_pytorch\build\CMakeFiles\3.19.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\vscode\cmake_pytorch\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\vscode\cmake_pytorch\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\vscode\cmake_pytorch\build\ZERO_CHECK.vcxproj">
+      <Project>{D775CC52-9EDE-3267-9C2D-42712A208880}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

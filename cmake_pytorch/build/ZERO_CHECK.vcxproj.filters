@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\vscode\cmake_pytorch\build\CMakeFiles\0169ca7fa89d6295c5ba65a85c0a0b22\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1D31538F-7FE8-38D9-B34D-A9F4DEC0F807}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
