@@ -1,0 +1,10 @@
+^D:\VSCODE\CMAKE_PYTORCH\BUILD\CMAKEFILES\0169CA7FA89D6295C5BA65A85C0A0B22\GENERATE.STAMP.RULE
+setlocal
+D:\cmake\bin\cmake.exe -SD:/vscode/cmake_pytorch -BD:/vscode/cmake_pytorch/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/vscode/cmake_pytorch/build/modelproject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
