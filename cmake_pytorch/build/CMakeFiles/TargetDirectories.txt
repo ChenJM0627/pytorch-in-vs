@@ -1,0 +1,3 @@
+D:/vscode/cmake_pytorch/build/CMakeFiles/modelproject.dir
+D:/vscode/cmake_pytorch/build/CMakeFiles/ALL_BUILD.dir
+D:/vscode/cmake_pytorch/build/CMakeFiles/ZERO_CHECK.dir
